@@ -20,7 +20,7 @@
                 <h5>FOOTBALL</h5>
             </a>
             <a href="./index.html" data-target="nav-mobile">
-                <i class="material-icons">keyboard_arrow_left</i>
+                <i class="material-icons">arrow_back</i>
             </a>
         </div>
     </nav>
@@ -132,6 +132,11 @@
         } else {
             console.log("ServiceWorker belum didukung browser ini.");
         }
+
+        // GET TEAMS BY ID
+        document.addEventListener('DOMContentLoaded', function () {
+            getTeamById()
+        })
     </script>
     <!-- AKHIR REGISTER -->
 
