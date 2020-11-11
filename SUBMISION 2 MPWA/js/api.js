@@ -167,7 +167,7 @@ function getTeamById() {
             if (response) {
                 response.json().then(function (teamsdata) {
                     console.log("Scorers Data: " + teamsdata);
-                    showScorer(teamsdata);
+                    showDetail(teamsdata);
                 })
             }
         })
@@ -175,14 +175,14 @@ function getTeamById() {
 
     fetchAPI(TEAMS_DETAIL + "/" + idParam)
         .then(teamsdata => {
-            showScorer(teamsdata);
+            showDetail(teamsdata);
         })
         .catch(error => {
             console.log(error)
         })
 }
 
-function showScorer(teamsdata) {
+function showDetail(teamsdata) {
     let squad = "";
     let teamsElement = document.getElementById("list-player");
 
